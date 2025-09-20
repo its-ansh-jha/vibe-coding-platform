@@ -1,0 +1,18 @@
+modules = ["nodejs-20", "web"]
+
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Run"
+mode = "sequential"
+author = 42483291
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run dev"
