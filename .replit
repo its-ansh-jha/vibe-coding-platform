@@ -16,7 +16,7 @@ author = 42483291
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run dev"
+args = "npm run dev -- --no-turbopack"
 
 [[ports]]
 localPort = 3000

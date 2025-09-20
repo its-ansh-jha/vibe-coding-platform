@@ -9,6 +9,13 @@ const nextConfig: NextConfig = {
     })
     return config
   },
+  experimental: {
+    turbo: {
+      resolveAlias: {
+        // Workaround for Replit symlink issues
+      },
+    },
+  },
   turbopack: {
     rules: {
       '*.md': {
@@ -29,6 +36,11 @@ const nextConfig: NextConfig = {
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+  // Allow dev origins for Replit
+  experimental: {
+    ...nextConfig.experimental,
+    allowedDevOrigins: ['*.replit.dev'],
   },
 }
 
