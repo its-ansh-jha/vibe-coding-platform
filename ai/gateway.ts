@@ -36,19 +36,6 @@ export function getModelOptions(
       },
     }
   }
-
-  if (modelId === Models.AnthropicClaude4Sonnet) {
-    return {
-      model: gateway(modelId),
-      headers: { 'anthropic-beta': 'fine-grained-tool-streaming-2025-05-14' },
-      providerOptions: {
-        anthropic: {
-          cacheControl: { type: 'ephemeral' },
-        },
-      },
-    }
-  }
-
   return {
     model: gateway(modelId),
   }
