@@ -9,8 +9,8 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import './globals.css'
 
-const title = 'Infonex Vibe Coding Platform'
-const description = `This is end-to-end coding platform where the user can enter text prompts, and the agent will create a full stack application. It uses Vercel's AI Cloud services like Sandbox for secure code execution, AI Model As InfonexAgent v2, Fluid Compute for efficient rendering and streaming, and it's built with Next.js and the AI SDK.`
+const title = 'InfonexAgent - AI Coding Platform'
+const description = `This is a end-to-end coding platform where the user can enter text prompts, and the agent will create a full stack application. It uses Vercel's AI Cloud services like Sandbox for secure code execution, AI Models For Automation, Fluid Compute for efficient rendering and streaming, and it's built with Next.js and the AI SDK.`
 
 export const metadata: Metadata = {
   title,
