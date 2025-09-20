@@ -7,6 +7,7 @@ channel = "stable-25_05"
 expertMode = true
 
 [workflows]
+runButton = "Run"
 
 [[workflows.workflow]]
 name = "Run"
@@ -16,3 +17,7 @@ author = 42483291
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npm run dev"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
